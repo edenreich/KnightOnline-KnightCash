@@ -11,14 +11,14 @@
 class KnightCash
 {
 	protected $_knightCash,
-			      $_db;
+	          $_db;
 
 	const ACCOUNT_TABLE = 'TB_USER',
-		  ACCOUNT_ID_COL = 'strAccountID',
-		  KNIGHT_CASH_COL = 'nKnightCash',
-		  TRANSACTIONS_TABLE = 'STORE_TRANSACTIONS',
-		  PAYMENT_STATUS_COL = 'bStatus',
-		  STATUS_COMPLETED = 3;
+	      ACCOUNT_ID_COL = 'strAccountID',
+	      KNIGHT_CASH_COL = 'nKnightCash',
+	      TRANSACTIONS_TABLE = 'STORE_TRANSACTIONS',
+	      PAYMENT_STATUS_COL = 'bStatus',
+	      STATUS_COMPLETED = 3;
 
 	public function __construct($transactionId, $db)
 	{
